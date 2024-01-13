@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class PositionType {
 
-    private int id;
+    final int id;
     private static int nextId = 1;
     private String value;
 
