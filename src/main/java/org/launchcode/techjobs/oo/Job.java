@@ -4,7 +4,8 @@ import java.util.Objects;
 
 public class Job {
 
-    private int id;
+    //changed ID field to final because there is no setter for it. If we have no need to change, why not make it final?
+    final int id;
     private static int nextId = 1;
 
     private String name;
