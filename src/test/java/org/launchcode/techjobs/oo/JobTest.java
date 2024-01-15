@@ -2,6 +2,7 @@ package org.launchcode.techjobs.oo;
 
 import org.junit.Test;
 
+import static java.lang.System.lineSeparator;
 import static org.junit.Assert.*;
 
 public class JobTest {
@@ -37,5 +38,27 @@ public class JobTest {
         Job BerryPicking = new Job();
         Job ApplePicking = new Job();
         assertNotEquals(BerryPicking, ApplePicking);
+    }
+
+    @Test
+    public void testToStringStartsAndEndsWithNewLine(){
+        Job BerryPicking = new Job("Berry Picker", new Employer("Grape.inc"),
+                new Location("West Farmlands"), new PositionType("Professional Forager"),
+                new CoreCompetency("Doesn't eat product"));
+        assertTrue(BerryPicking.toString().startsWith(lineSeparator()));
+        assertTrue(BerryPicking.toString().endsWith(lineSeparator()));
+    }
+
+    @Test
+    public void testToStringContainsCorrectLabelsAndData(){
+        Job BerryPicking = new Job("Berry Picker", new Employer("Grapes Inc."),
+                new Location("West Farmlands"), new PositionType("Professional Forager"),
+                new CoreCompetency("Doesn't eat product"));
+        assertEquals(BerryPicking.toString(), lineSeparator()+"ID: 1\n" +
+                "Name: Berry Picker\n" +
+                "Employer: Grapes Inc.\n" +
+                "Location: West Farmlands\n" +
+                "Position Type: Professional Forager\n" +
+                "Core Competency: Doesn't eat product"+lineSeparator());
     }
 }

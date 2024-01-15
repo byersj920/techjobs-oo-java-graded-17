@@ -2,6 +2,8 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
+import static java.lang.System.lineSeparator;
+
 public class Job {
 
     //changed ID field to final because there is no setter for it. If we have no need to change, why not make it final?
@@ -29,6 +31,21 @@ public class Job {
         this.location = location;
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
+    }
+
+    //Custom toString() method
+
+    @Override
+    public String toString() {
+        return String.format(lineSeparator()+
+                "ID: %s\n" +
+                "Name: %s\n" +
+                "Employer: %s\n" +
+                "Location: %s\n" +
+                "Position Type: %s\n" +
+                "Core Competency: %s"+
+                lineSeparator(), id, name, employer.getValue(), location.getValue(),
+                positionType.getValue(), coreCompetency.getValue());
     }
 
 
