@@ -54,7 +54,7 @@ public class JobTest {
         Job BerryPicking = new Job("Berry Picker", new Employer("Grapes Inc."),
                 new Location("West Farmlands"), new PositionType("Professional Forager"),
                 new CoreCompetency("Doesn't eat product"));
-        assertEquals(BerryPicking.toString(), lineSeparator()+"ID: 1\n" +
+        assertEquals(BerryPicking.toString(), lineSeparator()+"ID: 7\n" +
                 "Name: Berry Picker\n" +
                 "Employer: Grapes Inc.\n" +
                 "Location: West Farmlands\n" +
