@@ -45,8 +45,8 @@ public class JobTest {
         Job BerryPicking = new Job("Berry Picker", new Employer("Grape.inc"),
                 new Location("West Farmlands"), new PositionType("Professional Forager"),
                 new CoreCompetency("Doesn't eat product"));
-        assertTrue(BerryPicking.toString().startsWith(lineSeparator()));
-        assertTrue(BerryPicking.toString().endsWith(lineSeparator()));
+        assertTrue(BerryPicking.toString().startsWith("\n"));
+        assertTrue(BerryPicking.toString().endsWith("\n"));
     }
 
     @Test
@@ -54,11 +54,24 @@ public class JobTest {
         Job BerryPicking = new Job("Berry Picker", new Employer("Grapes Inc."),
                 new Location("West Farmlands"), new PositionType("Professional Forager"),
                 new CoreCompetency("Doesn't eat product"));
-        assertEquals(BerryPicking.toString(), lineSeparator()+"ID: 7\n" +
-                "Name: Berry Picker\n" +
-                "Employer: Grapes Inc.\n" +
-                "Location: West Farmlands\n" +
-                "Position Type: Professional Forager\n" +
-                "Core Competency: Doesn't eat product"+lineSeparator());
+        assertEquals(BerryPicking.toString(), "\nID: 4\n"+
+                "Name: Berry Picker\n"+
+                "Employer: Grapes Inc.\n"+
+                "Location: West Farmlands\n"+
+                "Position Type: Professional Forager\n"+
+                "Core Competency: Doesn't eat product\n");
+    }
+
+    @Test
+    public void testToStringHandlesEmptyField(){
+        Job BerryPicking = new Job("Berry Picker", new Employer(""),
+                new Location("West Farmlands"), new PositionType("Professional Forager"),
+                new CoreCompetency("Doesn't eat product"));
+        assertEquals(BerryPicking.toString(), "\nID: 3\n"+
+                "Name: Berry Picker\n"+
+                "Employer: Data not available\n"+
+                "Location: West Farmlands\n"+
+                "Position Type: Professional Forager\n"+
+                "Core Competency: Doesn't eat product\n");
     }
 }
