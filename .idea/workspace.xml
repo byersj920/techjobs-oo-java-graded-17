@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Created JobField superclass to dry code.">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="All graded tests are now passing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskFive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,34 +43,34 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2Qn6e2NCqVj233XTVZ3RW2TzDBN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.JobTest.executor": "Run",
-    "Gradle.JobTest.testJobsForEquality.executor": "Run",
-    "Gradle.JobTest.testToStringContainsCorrectLabelsAndData.executor": "Run",
-    "Gradle.JobTest.testToStringHandlesEmptyField.executor": "Run",
-    "Gradle.JobTest.testToStringStartsAmdEndsWithNewLine.executor": "Run",
-    "Gradle.JobTest.testToStrongStartsAmdEndsWithNewLine.executor": "Debug",
-    "Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine.executor": "Debug",
-    "Gradle.Tests in 'org.launchcode.techjobs.oo'.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/capta/OneDrive/Desktop/Launchcode/techjobs-oo-java-graded-17"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.JobTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JobTest.testJobsForEquality.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JobTest.testToStringContainsCorrectLabelsAndData.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JobTest.testToStringHandlesEmptyField.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JobTest.testToStringStartsAmdEndsWithNewLine.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JobTest.testToStrongStartsAmdEndsWithNewLine.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.Tests in 'org.launchcode.techjobs.oo'.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/capta/OneDrive/Desktop/Launchcode/techjobs-oo-java-graded-17&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.Tests in 'org.launchcode.techjobs.oo'">
     <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -297,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705358130221</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="All graded tests are now passing">
+      <option name="closed" value="true" />
+      <created>1705369914549</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705369914549</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -308,25 +313,21 @@
     <MESSAGE value="Completed Job Unit Tests. All tests are passing." />
     <MESSAGE value="Added ToString unit tests for Job class. All working." />
     <MESSAGE value="Created JobField superclass to dry code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created JobField superclass to dry code." />
+    <MESSAGE value="All graded tests are now passing" />
+    <option name="LAST_COMMIT_MESSAGE" value="All graded tests are now passing" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
+    {
+    },
+    {
+    },
+    {
+    },
     {
     }
   ],
   "lastFilter": {
   }
 }]]></component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskFive.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
 </project>
